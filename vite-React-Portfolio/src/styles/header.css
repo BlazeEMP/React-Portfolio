@@ -1,0 +1,21 @@
+.header {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    padding: 10px 3%;
+    z-index: 1000;
+}
+
+ul {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        position: fixed;
+        top: 0;
+    }
+}
