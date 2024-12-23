@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
         <div className="content-section">
-            <h1>Contact Info</h1>
+            <h2>Contact Info</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.

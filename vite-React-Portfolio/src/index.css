@@ -1,4 +1,10 @@
 :root {
+  --primary-color: #D4B796;
+  --secondary-color: #870B0B;
+  --tertiary-color: #58155C;
+  --light-color: #FFFCF5;
+  --dark-color: #141414;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -13,9 +19,4 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.content-section {
-  position: fixed;
-  padding-top: 120px;
 }

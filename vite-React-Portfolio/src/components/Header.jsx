@@ -1,12 +1,10 @@
-import '../styles/header.css';
+import Navbar from './Navbar';
 
 export default function Header() {
     return (
-        <div className="header">
-            <h1>Header</h1>
-            <ul>
-                <li>d</li>
-            </ul>
-        </div>
+        <header className="header">
+            <h1>Blaze<span>EMP</span></h1>
+            <Navbar />
+        </header>
     )
 }

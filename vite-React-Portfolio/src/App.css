@@ -1,12 +1,92 @@
+/* ---------- SET UP PAGE FLOW ---------- */
 #root {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-#content-section {
-  position: fixed;
-  top: 120px;
+/* ---------- ALL STYLING FOR HEADING AND CONTAINED COMPONENTS ---------- */
+.header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  padding: 10px 3%;
+  z-index: 1000;
+}
+
+.header span {
+  color: darkred;
+  font-weight: 500;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  vertical-align: bottom;
+  margin: 0 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.nav-links li:hover {
+  text-decoration: underline;
+}
+
+.nav-links a:hover {
+  color: blue;
+}
+
+/* ---------- ALL STYLING FOR MAIN CONTENT SECTION ---------- */
+.content-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0, 3%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 20px 0 0 0;
+}
+
+/* ALL ITEMS AND COMPONENTS IN FOOTER */
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90px;
+  background-color: #ff0000;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  padding: 10 px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+      position: relative;
+      top: 0;
+  }
+  
+  .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+  }
 }
