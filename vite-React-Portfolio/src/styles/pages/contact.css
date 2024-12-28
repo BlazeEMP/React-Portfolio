@@ -1,0 +1,25 @@
+
+.content-section .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border: 3px solid var(--secondary-color);
+    border-radius: 4px;
+    background-color: var(--light-color);
+}
+
+.form-label {
+    color: var(--dark-color);
+}
+
+.input-label {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.contact-button {
+    margin-top: 10px;
+}

@@ -1,0 +1,5 @@
+.about-me {
+    padding: 8px;
+    border: 2px var(--primary-color) solid;
+    border-radius: 10px;
+}
