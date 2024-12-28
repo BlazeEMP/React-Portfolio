@@ -1,34 +1,67 @@
+:root {
+  --primary-color: #4A3426;
+  --secondary-color: #513652;
+  --tertiary-color: #eea366;
+  --light-color: #fcfaf8;
+  --dark-color: #111111;
+
+  font-family: Helvetica, sans-serif, Arial, system-ui;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 18px;
+
+  color-scheme: light dark;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* ---------- SET UP PAGE FLOW ---------- */
 #root {
   display: flex;
   flex-direction: column;
 }
 
+html {
+  height: 100%;
+}
+
 /* ---------- ALL STYLING FOR HEADING AND CONTAINED COMPONENTS ---------- */
 .header {
-  height: 90px;
+  min-height: 90px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  color: var(--light-color);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  background-color: var(--primary-color);
   padding: 10px 3%;
   z-index: 1000;
 }
 
 .header span {
-  color: darkred;
+  color: var(--tertiary-color);
   font-weight: 500;
 }
 
 .nav-links {
   list-style-type: none;
   display: flex;
+  flex-direction: column;
+  text-decoration: underline;
 }
 
 .nav-links li {
   vertical-align: bottom;
-  margin: 0 20px;
+  margin: 5px 20px;
 }
 
 .nav-links a {
@@ -43,7 +76,7 @@
 }
 
 .nav-links a:hover {
-  color: blue;
+  color: var(--tertiary-color);
 }
 
 /* ---------- ALL STYLING FOR MAIN CONTENT SECTION ---------- */
@@ -54,7 +87,7 @@
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-  padding: 0, 3%;
+  padding: 0 3%;
 }
 
 h2 {
@@ -69,21 +102,47 @@ h2 {
   justify-content: center;
   align-items: center;
   height: 90px;
-  background-color: #ff0000;
+  background-color: var(--secondary-color);
   text-align: center;
   width: 100%;
   margin-top: 50px;
-  padding: 10 px;
+  padding: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
   z-index: 1000;
 }
 
+/* ---------- DEFAULT BUTTON STYLING ---------- */
+button {
+    min-width: 160px;
+    min-height: 40px;
+    max-height: 50px;
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+    border-radius: 4px;
+    background-color: var(--tertiary-color);
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
 @media screen and (min-width: 768px) {
   .header {
       position: relative;
+      flex-direction: row;
       top: 0;
   }
+  .nav-links {
+    flex-direction: row;
+  }
   
+  .nav-links li {
+    margin: 0px 20px;
+  }
+
   .footer {
       position: fixed;
       bottom: 0;
