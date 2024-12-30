@@ -1,21 +1,19 @@
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 
 export default function Navbar() {
-    const currentPage = useLocation().pathname;
-
     return (
         <ul className='nav-links'>
             <li>
-                <Link to='/'>About me</Link>
+                <NavLink to='/'>About me</NavLink>
             </li>
             <li>
-                <Link to='/portfolio'>Portfolio</Link>
+                <NavLink to='/portfolio'>Portfolio</NavLink>
             </li>
             <li>
-                <Link to='/contact'>Contact Me</Link>
+                <NavLink to='/contact'>Contact Me</NavLink>
             </li>
             <li>
-                <Link to='/resume'>Resume</Link>
+                <NavLink to='/resume'>Resume</NavLink>
             </li>
         </ul>
     )

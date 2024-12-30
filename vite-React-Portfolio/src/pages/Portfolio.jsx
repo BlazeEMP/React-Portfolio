@@ -1,14 +1,48 @@
+import '../styles/pages/portfolio.css';
 import Project from '../components/Project'
 
 export default function Portfolio() {
     return (
         <div className="content-section">
             <h2>Portfolio</h2>
-            // Add your project components here
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
-                Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
-            </p>
-        </div>)
+            <div className="card-container">
+                <Project
+                    title="Water tank controller"
+                    bgImg=""
+                    githubLink=""
+                    appLink=""
+                />
+                <Project
+                    title="Place 2"
+                    bgImg=""
+                    githubLink=""
+                    appLink=""
+                />
+                <Project
+                    title="Place 3"
+                    bgImg=""
+                    githubLink=""
+                    appLink=""
+                />
+                <Project
+                    title="Place 4"
+                    bgImg=""
+                    githubLink=""
+                    appLink=""
+                />
+                <Project
+                    title="Place 5"
+                    bgImg=""
+                    githubLink=""
+                    appLink=""
+                />
+                <Project
+                    title="Place 6"
+                    bgImg=""
+                    githubLink=""
+                    appLink=""
+                />
+            </div>
+        </div>
+    )
 }

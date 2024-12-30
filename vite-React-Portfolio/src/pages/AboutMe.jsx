@@ -16,5 +16,6 @@ export default function AboutMe() {
                 Recently I've taken the deep-dive into full stack software engineering to better understand the everday services I use and start my journey in contributing to the wide world of the developers. While web development was the focus of my college bootcamp course, my personal experience is in basic embedded engineering so I have many perspectives to offer.<br /><br />
                 I'm always looking for new projects to work on and new people to meet. If you're interested in working together, feel free to reach out to me!
             </p>
-        </div>)
+        </div>
+    )
 }
