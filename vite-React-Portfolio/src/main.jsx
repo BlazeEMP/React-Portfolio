@@ -7,7 +7,6 @@ import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import ErrorPage from './pages/ErrorPage';
-import './styles/reset.css'
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 const router = createBrowserRouter([

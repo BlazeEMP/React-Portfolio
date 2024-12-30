@@ -1,0 +1,36 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 95%;
+}
+
+.card-title {
+
+}
+
+.project-links {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    padding: 4px;
+}
+
+.links {
+    padding: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+    }
+
+    .project-card {
+    }
+}

@@ -52,11 +52,11 @@ html {
   font-weight: 500;
 }
 
-.nav-links {
+ul.nav-links {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  text-decoration: underline;
+  padding: 0;
 }
 
 .nav-links li {
@@ -71,12 +71,14 @@ html {
   font-weight: 500;
 }
 
-.nav-links li:hover {
-  text-decoration: underline;
+.nav-links a.active {
+  color: var(--tertiary-color);
 }
 
 .nav-links a:hover {
   color: var(--tertiary-color);
+  text-decoration: underline;
+  text-decoration-color: var(--tertiary-color);
 }
 
 /* ---------- ALL STYLING FOR MAIN CONTENT SECTION ---------- */
@@ -84,7 +86,6 @@ html {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   justify-content: space-around;
   padding: 0 3%;
@@ -120,6 +121,7 @@ button {
     border: 1px solid var(--dark-color);
     border-radius: 4px;
     background-color: var(--tertiary-color);
+    margin: 10px;
 }
 
 button:hover {
@@ -135,7 +137,7 @@ button:hover {
       flex-direction: row;
       top: 0;
   }
-  .nav-links {
+  ul.nav-links {
     flex-direction: row;
   }
   
