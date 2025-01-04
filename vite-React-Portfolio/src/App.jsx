@@ -5,13 +5,13 @@ import './styles/reset.css'
 import './App.css'
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Outlet className='content-section' />
-      <Footer />
-    </>
-  )
+    return (
+        <>
+            <Header />
+            <Outlet className='content-section' />
+            <Footer />
+        </>
+    )
 }
 
 export default App

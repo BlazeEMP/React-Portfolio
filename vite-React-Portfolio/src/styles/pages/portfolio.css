@@ -1,25 +1,44 @@
 .card-container {
     display: flex;
+    width: 100%;
     flex-direction: column;
+    padding: 4px;
+    justify-content: center;
 }
 
 .project-card {
+    margin-bottom: 30px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    width: 95%;
+    width: 100%;
+    box-shadow: 1px 1px 10px white;
 }
 
 .card-title {
+    min-height: 120px;
+    position: relative;
+    color: var(--dark-color);
+    font-weight: 700;
+}
 
+.card-title span {
+    background-color: rgba(var(--light-color-raw), 0.7);
+    line-height: 1.25rem;
+    border-radius: 3px;
+    position: absolute;
+    padding: 0 .25rem;
+    bottom: 10px;
+    left: 10px;
+    visibility: hidden;
 }
 
 .project-links {
+    min-height: 35px;
     display: flex;
-    flex: auto;
     flex-direction: row;
     padding: 4px;
+    justify-content: space-around;
 }
 
 .links {
@@ -29,8 +48,11 @@
 @media screen and (min-width: 768px) {
     .card-container {
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .project-card {
+        margin: 30px;
+        flex: 1 1 28%;
     }
 }

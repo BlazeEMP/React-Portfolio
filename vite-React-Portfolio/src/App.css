@@ -3,6 +3,7 @@
   --secondary-color: #513652;
   --tertiary-color: #eea366;
   --light-color: #fcfaf8;
+  --light-color-raw: 252, 250, 248;
   --dark-color: #111111;
 
   font-family: Helvetica, sans-serif, Arial, system-ui;
@@ -28,9 +29,9 @@
   flex-direction: column;
 }
 
-html {
+/* html {
   height: 100%;
-}
+} */
 
 /* ---------- ALL STYLING FOR HEADING AND CONTAINED COMPONENTS ---------- */
 .header {
@@ -89,6 +90,7 @@ ul.nav-links {
   align-items: center;
   justify-content: space-around;
   padding: 0 3%;
+  margin-bottom: 100px;
 }
 
 h2 {
@@ -106,10 +108,22 @@ h2 {
   background-color: var(--secondary-color);
   text-align: center;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 10px;
   padding: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
   z-index: 1000;
+}
+
+.footer a {
+  color: lightblue;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: lightcoral;
 }
 
 /* ---------- DEFAULT BUTTON STYLING ---------- */
