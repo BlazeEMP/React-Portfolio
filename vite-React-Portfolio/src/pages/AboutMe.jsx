@@ -9,7 +9,7 @@ export default function AboutMe() {
     return (
         <div className="content-section">
             <h2>About Me</h2>
-            <img src={"../../public/mypic.jpg"} style={photoStyles} />
+            <img src={"./mypic.jpg"} style={photoStyles} />
             <p className='about-me'>
                 Welcome to my page! I won't bore you by telling you how much I love coding and how I've been doing it since I was 5 years old.
                 Or even that I have a passion for creating beautiful, responsive websites. Those should happen naturally! (And I don't think anyone coded at 5 years old.)<br /><br />
